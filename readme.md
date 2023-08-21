@@ -8,7 +8,7 @@ The following are the steps for artifact registry, more secure solution:
 - 0) create repo in artifact with REPO_NAME
 - 1) authentication: gcloud auth configure-docker europe-west1-docker.pkg.dev
 - 2) build: docker build . -t LOCAL_NAME
-- 3) tag: docker tag LOCAL_NAME europe-west1-docker.pkg.dev/uk-gap-ap-lab-dev/REPO_NAME/LOCAL_NAME
+- 3) tag: docker tag LOCAL_NAME europe-west1-docker.pkg.dev/PROJECT_ID/REPO_NAME/LOCAL_NAME
 - 4) push: docker push europe-west1-docker.pkg.dev/PROJECT_ID/REPO_NAME/LOCAL_NAME
 
 Before everything its' necessary to manually create (or from cloud shell) the repository.
